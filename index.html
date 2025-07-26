@@ -115,7 +115,12 @@ _iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"enableLgpd":true,
 
     <body class="home wp-singular page-template page-template-page-homepage page-template-page-homepage-php page page-id-149 wp-theme-gufram -loading  ">
 
-        
+     <script>
+  if (localStorage.getItem('disclaimerAccepted') !== 'true') {
+    window.location.href = "disclaimer.html";
+  }
+</script>
+
         <div class="g-cursor" js-cursor="">
     <div class="g-cursor__product">
         <div class="g-cursor__product-title"><div></div></div>
